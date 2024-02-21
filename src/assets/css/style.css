@@ -1,0 +1,118 @@
+/* ---------- Reset ---------- */
+@import url('./reset.css');
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* ---------- typos ---------- */
+@font-face {
+    font-family: 'firaSans';
+    src: url('../fonts/FiraSans-Book.woff');
+}
+
+header a, .nav_container a, .fiches_filter a, .fiches_liste a, header, button{
+    font-family: 'firaSans';
+    font-size: calc(0.7rem + 0.7vmax);
+}
+
+/* ---------- style général liens ---------- */
+.nav_container li, .nav_container a, .fiches_filter li, .fiches_filter a, .fiches_liste li, .header_container{
+    padding: calc(0.5rem + 0.5vmax);
+    border-radius: 5rem;
+}
+
+/* ---------- header ---------- */
+header{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    top: 3vh;
+    left: 3vw;
+}
+
+.header_container{
+    background-color: white;
+    border: 3px solid blue;
+    color: blue;
+}
+
+header a {
+    color: blue; 
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    color: blue;
+    cursor: pointer;
+}
+
+button[value=""]{
+    display: none;
+}
+
+/* ---------- main nav ---------- */
+.nav_container{
+    width: fit-content;
+    height: fit-content;
+    margin: 14vh 2vw 10vh 3vw;
+}
+
+.nav_container li{
+    margin-bottom: 4vh;
+    width: fit-content;
+    background-color: blue;
+}
+
+.nav_container a{
+    color: white;
+}
+
+/* ---------- Fiches de lecture ---------- */
+.fiches_container{
+    width: 100vw;
+    height: 100vh;
+    margin:15vh 2vw 15vh 3vw;
+    display: flex;
+}
+
+.fiches_filter{
+    width: 20%;
+}
+
+.fiches_filter li{
+    margin: 1vw;
+    width: fit-content;
+    background-color: blue;
+}
+
+.fiches_filter a{
+    color: white;
+}
+
+.fiches_liste{
+    width: 80%;
+    display: flex;
+    margin-top: 10vh;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.fiches_liste a{
+    width: 30%;
+    margin: 1vw 0 5vh 7vh;
+    line-height: 1.3em;
+    height: fit-content;
+    color: black;
+}
+
+.fiches_liste a:hover{
+    color: blue;
+}

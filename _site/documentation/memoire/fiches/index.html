@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        
+<div class="header_container">
+    <a href="/index">~</a>
+    <!-- <a href=""></a>
+    <a href=""></a>
+     -->
+    <button onclick="history.go(-3)" value=""></button>
+    <button onclick="history.go(-2)" value=""></button>
+    <button onclick="history.go(-1)" value="/Mémoire">/Mémoire</button>
+    /Fiches_de_lecture
+    
+</div>
+
+    </header>
+
+    <div class="fiches_container">
+
+        <div class="fiches_filter">
+<button id="dansebtn" onclick="displayDanse('visible','yellow'); displayAll('hidden', 'white')">danse</button>
+<button id="allbtn" onclick="displayDanse('hidden', 'white');displayAll('visible', 'yellow')">all</button>
+</div>
+<div class="fiches_liste">
+<div id="all">
+<p><a href="/documentation/memoire/fiches/corpsNumeriqueScene/">Corps numériques en scène, à partir de l'expérience des &quot;Bains numériques&quot; et du Réseau Arts numériques (RAN) / sous la coordination éditoriale de Philippe Franck</a></p>
+<p><a href="/documentation/memoire/fiches/prout/">Le tamis et le sable, un projet curatorial de Anne-Lou Vicente, Raphaël Brunel &amp; Antoine Marchand</a></p>
+</div>
+<div id="danse">
+<p><a href="/documentation/memoire/fiches/corpsNumeriqueScene/">Corps numériques en scène, à partir de l'expérience des &quot;Bains numériques&quot; et du Réseau Arts numériques (RAN) / sous la coordination éditoriale de Philippe Franck</a></p>
+</div>   
+</div>
+<script>
+function displayDanse(newValue, newColor) {
+  var danse = document.getElementById("danse");
+  var dansebtn = document.getElementById("dansebtn")
+danse.style.visibility = newValue;
+dansebtn.style.backgroundColor = newColor;
+}
+function displayAll(newValue, newColor){
+    var all = document.getElementById("all");
+    all.style.visibility = newValue;
+    var allbtn = document.getElementById("allbtn")
+    allbtn.style.backgroundColor = newColor;
+}
+</script>
+<!-- <script>
+    var danse = "danse";
+    var wantedCategory = "all";
+
+    function selectCategory(){
+        return wantedCategory;
+    }
+    
+    console.log(wantedCategory);
+
+</script>
+
+<div class="fiches_filter">
+    
+    <button onclick="selectCategory(all)">all</button>
+    
+    <button onclick="selectCategory(danse)">danse</button>
+    
+    <button onclick="selectCategory(archivage)">archivage</button>
+    
+</div> 
+
+
+    
+
+    
+    <li>/Le_tamis_et_le_sable</li>
+    
+ -->
+
+
+    </div>
+    
+</body>
+</html>
